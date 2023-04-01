@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MOKEPON!</title>
+       
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">MOKEPON! 🔥💧🌱</h1>
+        </header>
+        <main>
+            <section id="seleccionar-mascota">
+                <h2 class="eleccion">Elige tu mascota:</h2>
+                <section id="contenedorTarjetas" class="eleccionO">
+                </section>
+                <button id="botonMasco">JUGAR</button>
+            </section>
+            <section id="ver-mapa">
+                <h1 class="sup-titulo">Recorre el mapa con tu mokepon</h1>
+                <canvas id="mapa" ></canvas>
+                <div class="div-movimiento">
+                    <!-- onclick es para activarlo una vez ----- onmousedown para activarlo seguido y onmouseup detenerlo-->
+                    <button ontouchstart="moverArriba()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">arriba</button>
+                    <!--  ontouchstart == onmousedown pero para movil -----y----  ontouchend == onmouseup-->
+                    <div>
+                        <button ontouchstart="moverizquierda()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverizquierda()">izquierda</button>
+                        <button ontouchstart="moverMokepon()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverMokepon()">derecha</button>
+                    </div>
+                    <button ontouchstart="moverAbajo()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">abajo</button>
+                </div>
+            </section>
+            <section class="margen">
+                <div class="casillaDeMensaje">
+                    <section id="reiniciar">
+                        <section id="resultado">
+                            <img src="" alt="" id="iman">
+                        </section>
+                        <button id="reiniciarr">Reiniciar</button>
+                    </section>
+                </div>
+                <section id="seleccionarAtaque">
+                    <section class="hola">
+                        <h2>Elige tu ataque:</h2>
+                    </section>
+                    <div class="BOTONES" id="botonesDeAtaque">
+                    </div>
+                    <div class="div-de-vida" id="barraDeVida">
+                        <p class="miMascota"><img src="" alt=""><span id="mascotaJugador"></span> tiene <span id="vidas">0</span> vitoria</p>
+                        <p class="mascotaEnemigo"><span id="macotaEne"></span> enemiga tiene <span id="vidasE">0</span> vitoria</p>
+                        <p id="mensaje"></p>
+                    </div>
+                    <Section class="oooohhhhH">               
+                        <h4 id="resultadoDePelea" class="oooohhhh">comenza el combate</h4>
+                    </Section>
+                    <section class="combateEpico">
+                        <div id="ataque"></div>
+                        <div id="ataqueEnemigo"></div>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <script src="js/mokepon.js"></script>
+    </body>
+</html>

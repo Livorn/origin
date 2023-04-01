@@ -1,0 +1,283 @@
+*{
+    margin: 0%;
+    font-family: 'Fredoka One', cursive;
+    font-size: large;
+}
+html{
+    background-image: url(../photo/fondo.jpg);
+    background-position: 30vh;
+    background-position-x: 0vh;
+    background-position-y: 100vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.titulo {
+    background-color: rgb(0, 0, 0);
+    margin: 3vh;
+    border-radius: 5vh;
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+}
+#seleccionar-mascota{
+    background: none;
+    background-color: rgba(203, 255, 255, 0.452);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border: 1px solid black;
+    margin: 3vh;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* box-sizing: border-box; para que el padinng no nos modifique */
+}
+.eleccionO{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.eleccion{
+    color: antiquewhite;
+    background-color: black;
+    border-radius: 2vh;
+    border: 1px solid black;
+    margin-top: 3vh;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.labelMascota{
+    border: 2px solid black;
+    background-color: rgb(119, 255, 41);
+    padding: 4vh;
+    border-radius: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    margin: 3vh;
+}
+.labelMascota:hover { 
+    background: blue; 
+    color: white; 
+    cursor: pointer;
+} 
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sup-titulo{
+    background-color: rgb(191, 219, 28);
+    margin: 3vh;
+    border-radius: 5vh;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+}
+.div-movimiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa button{
+    background-color: rgb(43, 226, 211);
+    padding: 2vh;
+    margin: 1vh;
+    border-radius: 5vh;
+}
+#ver-mapa button:hover {
+    background-color: rgb(43, 226, 98);
+    padding: 2vh;
+    margin: 1vh;
+    border-radius: 5vh;
+}
+.labelMascota p{
+    display: flex;
+    justify-content: center;
+}
+.labelMascota img{
+    height: 30vmin;
+    display: flex;
+    justify-content: center;
+}
+#iman{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+input{
+    display: none;
+}
+input:checked + label{
+    background-color: blue;
+}
+#botonMasco{
+    background-color: blueviolet;
+    height: 7vh;
+    width: 200px;
+    margin: 2vh;
+    border-radius: 5vh;
+}
+#botonMasco:hover { 
+    background: blue; 
+    color: white; 
+    cursor: pointer;
+} 
+.casillaDeMensaje{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reiniciar{
+    background-color: rgba(0, 255, 64, 0.438);
+    border-radius: 5vh;
+    border: 1px solid black;
+    display: flex;
+}
+#reiniciar section{
+    padding: 2vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#resultado h1{
+    font-size: 5vh;
+}
+#reiniciar button{
+    margin: 1vh;
+    background-color: rgba(43, 226, 211, 0.699);
+    height: 7vh;
+    width: 30vh;
+    border-radius: 5vh;
+}
+#seleccionarAtaque{
+    background-color: rgba(0, 255, 55, 0.568);
+    border: 1px solid rgb(65, 0, 0);
+    border-radius: 2vh;
+    padding: 2vh;
+    display: flex;
+}
+.hola{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 3vh;
+}
+.hola h2{
+    background-color: rgba(0, 17, 255, 0.418);
+    border: 1px solid black;
+    border-radius: 2vh;
+    padding: 2vh;
+    font-size: 4vh;
+}
+.div-de-vida{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2vh;
+    border-bottom: 0.5vh solid black;
+}
+.miMascota{
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 2vh;
+    padding: 1vh;
+    margin: 3vh;
+}
+.mascotaEnemigo{
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 2vh;
+    padding: 1vh;
+    margin: 3vh;
+}
+.BOTONES{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BOTONES button{
+    margin: 1vh;
+    background-color: rgb(166, 255, 0);
+    font-size: 8vh;
+    border-radius: 5vh;
+}
+.BOTONES button:hover{
+    background: olive; 
+    color: white; 
+}
+.oooohhhhH{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.oooohhhh{
+    background-color: rgba(127, 255, 212, 0.507);
+    border: 1px solid blanchedalmond;
+    margin-top: 1vh;
+    padding: 3vh;
+    font-size: 3vh;
+    border-radius: 6vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+.combateEpico{
+    display: grid;
+    grid-template-columns: 50vh 50vh;
+    justify-items: center;
+}
+/* media es para determinar la forma de la wed en diferente pantaña */
+@media (max-width: 430px){
+    #seleccionar-mascota{
+        padding: 2vh;
+    }
+    .eleccion{
+        font-size: 3vh;
+    }
+    .eleccionO{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .BOTONES{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #seleccionar-mascota {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .div-de-vida{
+        display: flex;
+        flex-direction: column;
+    }
+    .combateEpico{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .labelMascota {
+        margin: 7px;
+        padding: 3vh;
+    }
+}
